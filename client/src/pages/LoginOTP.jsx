@@ -38,7 +38,7 @@ const LoginOTP = () => {
 
     setLoading(true);
     try {
-        const response = await axios.post("http://localhost:4000/user/password", { email });
+        const response = await axios.post("https://crmwebsite-ww7w.onrender.com/user/password", { email });
 
         // console.log(response.data); // Debugging: Check the entire response in console
         if (response.data.success === true) {
@@ -68,7 +68,7 @@ const handleVerifyOtp = async (e) => {
     try {
 
         const response = await axios.post(
-          "http://localhost:4000/user/verify-otp",
+          "https://crmwebsite-ww7w.onrender.com/user/verify-otp",
           { email, otp: Number(otp) },
           { headers: { 'Content-Type': 'application/json' } }
         );

@@ -70,7 +70,7 @@ function SignUp() {
 
     if (validateForm()) {
       try {
-        const response = await axios.post('http://localhost:4000/user/signup', userData);
+        const response = await axios.post('https://crmwebsite-ww7w.onrender.com/user/signup', userData);
         if (response.status === 201) {
           alert('Registration successful!');
           navigate('/login');
