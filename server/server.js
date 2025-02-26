@@ -27,9 +27,9 @@ app.use(cors({
     credentials: true, // Allow credentials
   }));
 
-  app.use(express.static(path.join(_dirname,"/CRM/dist")));
+  app.use(express.static(path.join(_dirname,"/client/dist")));
   app.get('*',(_,res)=>{
-    res.sendFile(path.resolve(_dirname,"CRM","dist","index.html"));
+    res.sendFile(path.resolve(_dirname,"client","dist","index.html"));
   })
   
 
