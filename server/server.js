@@ -20,7 +20,6 @@ dotenv.config();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(morgan('dev'));
-// app.use(cors({ origin: "http://localhost:5173" }));
 app.use(cors({
     origin: "http://localhost:5173",
     methods: ["GET", "POST"],
@@ -48,9 +47,8 @@ userRouter.post("/login", userLogin);
 
 
 const PORT = process.env.PORT || 4000;
-const hostname = process.env.HOST_ADD || "localhost";  // Corrected hostname initialization
 
-app.listen(PORT, hostname, () => {
-    console.log(`server is start http://${hostname}:${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+    console.log(`Server is running on port ${port}`);
     dbConnect();
 });
