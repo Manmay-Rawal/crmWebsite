@@ -1,0 +1,48 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node",
+    "dev": "nodemon"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+<<<<<<< HEAD
+<<<<<<< HEAD
+    "axios": "^1.7.9",
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "cros": "^1.0.1",
+    "dotenv": "^16.4.5",
+    "env": "^0.0.2",
+    "express": "^4.21.2",
+    "gitignore": "^0.7.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.12.0",
+    "mongoose": "^8.7.2",
+    "nodemailer": "^6.9.15",
+    "twilio": "^5.4.3"
+=======
+    "package.json": "^2.0.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+>>>>>>> d03288f (NAvbar Added)
+=======
+    "bootstrap-icons": "^1.11.3",
+    "package.json": "^2.0.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.4.0"
+>>>>>>> e62b17a (git ignored)
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.7"
+  }
+}
